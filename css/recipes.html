@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="shortcut icon" href="../img/logo/cnglogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="foodhub.css">
+    <link rel="stylesheet" href="tab.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="keyframes.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="carousel.css">
+    <script src="https://kit.fontawesome.com/d3c96e30db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inter:wght@200;300;400;600;700&family=Jost:wght@200;300;400;500;600;700;800;900&family=Lobster&family=Noto+Sans:wght@200;300;400;500;600;700;800;900&family=Nunito+Sans:wght@200;300;400;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@200;400;600;700&family=Raleway:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Satisfy&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="sectionX"  style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/Head/back.jpg);">
+        <header>
+            <nav>
+                <a href="foodhub.html" class="logo-cng"><img src="../img/logo/cnglogo.png" style="height: 9vh; border-radius: 50px; margin-top: -.5%;"></a>
+                <a href="foodhub.html" class="logo"><img src="../img/logo/logo.png" style="height: 13vh; border-radius: 50px;"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="foodhub.html" class="underline">Home</a></li>
+                        <li><a href="about.html" class="underline">About</a></li>
+                        <li><a href="recipes.html" class="underline">Recipes</a></li>
+                        <li class="blog">
+                            <a href="#">Blog <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="bloghome.html">Blog</a></li>
+                                <li><a href="blogsingle.html">Single-Blog</a></li>
+                            </ul>
+                        </li>
+                        <li class="pages">
+                            <a href="#">pages <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="pages.html">Recipes Details</a></li>
+                                <li><a href="pages.html">Elements</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html" class="underline">Contact</a></li>
+                    </ul>
+                </div>
+                <a href="#"><button type="submit" class="btn0">Check Out</button></a>
+               <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav> 
+        </header>  
+        <section class="section5">
+            <div class="sect5" data-aos="fade-in">
+                <h2>Recipes</h2>
+                <div class="ree">
+                    <a href="foodhub.html" style="text-decoration: none;">Home</a>
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <a href="recipes.html" style="text-decoration: none;">Recipes</a>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+    <section class="sectionB">
+        <div class="sectB">
+            <div class="hero" data-aos="fade-up">
+                <div class="btn-box">
+                    <button id="btn1" onclick="openBreakfast()">Breakfast <i class="fa-solid fa-bread-slice"></i></button>
+                    <button id="btn2" onclick="openLunch()">Lunch <i class="fa-solid fa-bowl-rice"></i></button>
+                    <button id="btn3" onclick="openDinner()">Dinner <i class="fa-solid fa-drumstick-bite"></i></button>
+                    <button id="btn4" onclick="openDrinks()">Drinks <i class="fa-solid fa-martini-glass"></i></button>
+                    <button id="btn5" onclick="openDesserts()">Desserts <i class="fa-solid fa-cheese"></i></button>
+                    <button id="btn6" onclick="openWine()">Wine <i class="fa-solid fa-wine-glass"></i></button>
+                </div>
+                <div id="content1" class="content">
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/breakfasts/break1.jpg" style="height: 28vh;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Pancakes, Bacon & Eggs</h4>
+                            <p>Pancakes, Bacon, Eggs, Coffee</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/breakfasts/break2.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Pancakes, Bacon & Eggs</h4>
+                            <p>Pancakes, Bacon, Eggs, Coffee</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/breakfasts/break3.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Pancakes, Bacon & Eggs</h4>
+                            <p>Pancakes, Bacon, Eggs, Coffee</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/breakfasts/break4.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Pancakes, Bacon & Eggs</h4>
+                            <p>Pancakes, Bacon, Eggs, Coffee</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/breakfasts/break5.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Pancakes, Bacon & Eggs</h4>
+                            <p>Pancakes, Bacon, Eggs, Coffee</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/breakfasts/break6.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Pancakes, Bacon & Eggs</h4>
+                            <p>Pancakes, Bacon, Eggs, Coffee</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/breakfasts/break5.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Pancakes, Bacon & Eggs</h4>
+                            <p>Pancakes, Bacon, Eggs, Coffee</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/breakfasts/break3.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Pancakes, Bacon & Eggs</h4>
+                            <p>Pancakes, Bacon, Eggs, Coffee</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="content2" class="content">
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/lunch/img1.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Salad</h4>
+                            <p>Lettuce, chicken, onions etc.</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/lunch/img2.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Salad</h4>
+                            <p>Lettuce, chicken, onions etc.</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/lunch/img3.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Salad</h4>
+                            <p>Lettuce, chicken, onions etc.</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/lunch/img4.webp" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Salad</h4>
+                            <p>Lettuce, chicken, onions etc.</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/lunch/img5.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Salad</h4>
+                            <p>Lettuce, chicken, onions etc.</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/lunch/img6.webp" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Salad</h4>
+                            <p>Lettuce, chicken, onions etc.</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/lunch/img2.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Salad</h4>
+                            <p>Lettuce, chicken, onions etc.</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/lunch/img5.webp" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Salad</h4>
+                            <p>Lettuce, chicken, onions etc.</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="content3" class="content">
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/dinner/img1.webp" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Chicken</h4>
+                            <p>Chicken, Broccoli, Red pepper</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/dinner/img2.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Chicken</h4>
+                            <p>Chicken, Broccoli, Red pepper</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/dinner/img3.webp" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Chicken</h4>
+                            <p>Chicken, Broccoli, Red pepper</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/dinner/img4.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Chicken</h4>
+                            <p>Chicken, Broccoli, Red pepper</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/dinner/img5.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Chicken</h4>
+                            <p>Chicken, Broccoli, Red pepper</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/dinner/img6.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Chicken</h4>
+                            <p>Chicken, Broccoli, Red pepper</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/dinner/img2.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Chicken</h4>
+                            <p>Chicken, Broccoli, Red pepper</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/dinner/img4.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Chicken</h4>
+                            <p>Chicken, Broccoli, Red pepper</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="content4" class="content">
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/drinks/img1.webp" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Drink</h4>
+                            <p>Orange Drink</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/drinks/img2.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Drink</h4>
+                            <p>Orange Drink</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/drinks/img3.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Drink</h4>
+                            <p>Orange Drink</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/drinks/img4.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Drink</h4>
+                            <p>Orange Drink</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/drinks/img5.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Drink</h4>
+                            <p>Orange Drink</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/drinks/img6.webp" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Drink</h4>
+                            <p>Orange Drink</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/drinks/img2.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Drink</h4>
+                            <p>Orange Drink</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/drinks/img5.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Drink</h4>
+                            <p>Orange Drink</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="content5" class="content">
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/desserts/dessert1.webp" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Cakes</h4>
+                            <p>Chocolate Cake</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/desserts/dessert2.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Cakes</h4>
+                            <p>Chocolate Cake</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/desserts/dessert3.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Cakes</h4>
+                            <p>Chocolate Cake</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/desserts/dessert4.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Cakes</h4>
+                            <p>Chocolate Cake</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/desserts/dessert5.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Cakes</h4>
+                            <p>Chocolate Cake</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/desserts/dessert6.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Cakes</h4>
+                            <p>Chocolate Cake</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/desserts/dessert2.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Cakes</h4>
+                            <p>Chocolate Cake</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/desserts/dessert5.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Cakes</h4>
+                            <p>Chocolate Cake</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="content6" class="content">
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/wine/wine1.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Wine</h4>
+                            <p>Classic Wines</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/wine/wine2.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Wine</h4>
+                            <p>Classic Wines</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/wine/wine3.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Wine</h4>
+                            <p>Classic Wines</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/wine/wine4.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Wine</h4>
+                            <p>Classic Wines</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/wine/wine5.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Wine</h4>
+                            <p>Classic Wines</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/wine/wine6.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Wine</h4>
+                            <p>Classic Wines</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/wine/wine2.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Wine</h4>
+                            <p>Classic Wines</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <figure>
+                            <img src="../img/tab/wine/wine5.jpg" style="height: 28vh; width: 100%;">
+                        </figure>
+                        <div class="ents">
+                            <h4>Wine</h4>
+                            <p>Classic Wines</p>
+                            <a href="#"><button type="submit" class="btnX">Order Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="foot">
+            <div class="foot1">
+                <a href="./foodhub.html" class="logo"><img src="../img/logo/logo.png" style="height: 13vh; border-radius: 50px;"></a>
+                <p>Far far away, behind the word <br> mountains, far from the countries <br> Vokalia and Consonantia, there live <br> the blind texts.</p>
+                <div class="icons">
+                    <a href="https://twitter.com/chii_derahh"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://web.facebook.com/hitzbluntzz"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/hits_bluntsss"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://t.me/dah_kvng17"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://github.com/Hits-blunts19"><i class="fa-brands fa-github"></i></a>         
+                </div>
+            </div>
+            <div class="foot2">
+                <h5>Open Hours</h5>
+                <table>
+                    <tr>
+                        <th>Monday</th>
+                        <td>9:00-24:00</td>
+                    </tr>
+                    <tr>
+                        <th>Tuesday</th>
+                        <td>9:00-24:00</td>
+                    </tr>
+                    <tr>
+                        <th>Wednesday</th>
+                        <td>9:00-24:00</td>
+                    </tr>
+                    <tr>
+                        <th>Thursday</th>
+                        <td>9:00-24:00</td>
+                    </tr>
+                    <tr>
+                        <th>Friday</th>
+                        <td>9:00-2:00</td>
+                    </tr>
+                    <tr>
+                        <th>Saturday</th>
+                        <td>9:00-2:00</td>
+                    </tr>
+                    <tr>
+                        <th>Sunday</th>
+                        <td>9:00-2:00</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="foot3">
+                <h5>Instagram</h5>
+                <div class="ig">
+                    <img src="../img/Food/ig/coca and chips.jpg" >
+                    <img src="../img/Food/ig/coca double decker.jpg" >
+                    <img src="../img/Food/ig/Good_Food_Display_-_NCI_Visuals_Online.jpg" >
+                </div>
+                <div class="ig">
+                    <img src="../img/Food/ig/icecream 1.jpg">
+                    <img src="../img/Food/ig/icecream 2.jpg" >
+                    <img src="../img/Food/ig/photo-1551024601-bec78aea704b.jpg" >
+                </div>
+            </div>
+            <div class="foot4">
+                <h5>Newsletter</h5>
+                <input type="email" placeholder="Enter Email Address"><br>
+                <a href="#"><button type="submit" class="btn6">Subscribe</button></a>
+            </div>
+        </div>
+        <div class="right">
+            <p>Copyright ©2022 All rights reserved | This template is made with <i class="fa-solid fa-heart"></i> by <a href="https://github.com/Hits-blunts19" style="color: #fb9202;">TechBait</a></p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script>
+        var content1 = document.getElementById("content1");
+        var content2 = document.getElementById("content2");
+        var content3 = document.getElementById("content3");
+        var content4 = document.getElementById("content4");
+        var content5 = document.getElementById("content5");
+        var content6 = document.getElementById("content6");
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        var btn4 = document.getElementById("btn4");
+        var btn5 = document.getElementById("btn5");
+        var btn6 = document.getElementById("btn6");
+
+        function openBreakfast(){
+            content1.style.transform = "translateX(0)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(100%)";
+            content4.style.transform = "translateX(100%)";
+            content5.style.transform = "translateX(100%)";
+            content6.style.transform = "translateX(100%)";
+            btn1.style.color = "#fff";
+            btn1.style.background = "#fb9202"
+            btn2.style.color = "#fb9202";
+            btn2.style.background = "#ffff"
+            btn3.style.color = "#fb9202";
+            btn3.style.background = "#ffff"
+            btn4.style.color = "#fb9202";
+            btn4.style.background = "#ffff"
+            btn5.style.color = "#fb9202";
+            btn5.style.background = "#ffff"
+            btn6.style.color = "#fb9202";
+            btn6.style.background = "#ffff"
+            content1.style.transitionDelay = "0.4s";
+            content2.style.transitionDelay = "0";
+            content3.style.transitionDelay = "0";
+            content4.style.transitionDelay = "0";
+            content5.style.transitionDelay = "0";
+            content6.style.transitionDelay = "0";
+        }
+        function openLunch(){
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(0)";
+            content3.style.transform = "translateX(100%)";
+            content4.style.transform = "translateX(100%)";
+            content5.style.transform = "translateX(100%)";
+            content6.style.transform = "translateX(100%)";
+            btn2.style.color = "#fff";
+            btn2.style.background = "#fb9202"
+            btn1.style.color = "#fb9202";
+            btn1.style.background = "#ffff"
+            btn3.style.color = "#fb9202";
+            btn3.style.background = "#ffff"
+            btn4.style.color = "#fb9202";
+            btn4.style.background = "#ffff"
+            btn5.style.color = "#fb9202";
+            btn5.style.background = "#ffff"
+            btn6.style.color = "#fb9202";
+            btn6.style.background = "#ffff"
+            content1.style.transitionDelay = "0";
+            content2.style.transitionDelay = "0.4s";
+            content3.style.transitionDelay = "0";
+            content4.style.transitionDelay = "0";
+            content5.style.transitionDelay = "0";
+            content6.style.transitionDelay = "0";
+        }
+        function openDinner(){
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(0)";
+            content4.style.transform = "translateX(100%)";
+            content5.style.transform = "translateX(100%)";
+            content6.style.transform = "translateX(100%)";
+            btn3.style.color = "#fff";
+            btn3.style.background = "#fb9202"
+            btn2.style.color = "#fb9202";
+            btn2.style.background = "#ffff"
+            btn1.style.color = "#fb9202";
+            btn1.style.background = "#ffff"
+            btn4.style.color = "#fb9202";
+            btn4.style.background = "#ffff"
+            btn5.style.color = "#fb9202";
+            btn5.style.background = "#ffff"
+            btn6.style.color = "#fb9202";
+            btn6.style.background = "#ffff"
+            content1.style.transitionDelay = "0";
+            content2.style.transitionDelay = "0";
+            content3.style.transitionDelay = "0.4s";
+            content4.style.transitionDelay = "0";
+            content5.style.transitionDelay = "0";
+            content6.style.transitionDelay = "0";
+        }
+        function openDrinks(){
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(100%)";
+            content4.style.transform = "translateX(0)";
+            content5.style.transform = "translateX(100%)";
+            content6.style.transform = "translateX(100%)";
+            btn4.style.color = "#fff";
+            btn4.style.background = "#fb9202"
+            btn2.style.color = "#fb9202";
+            btn2.style.background = "#ffff"
+            btn3.style.color = "#fb9202";
+            btn3.style.background = "#ffff"
+            btn1.style.color = "#fb9202";
+            btn1.style.background = "#ffff"
+            btn5.style.color = "#fb9202";
+            btn5.style.background = "#ffff"
+            btn6.style.color = "#fb9202";
+            btn6.style.background = "#ffff"
+            content1.style.transitionDelay = "0";
+            content2.style.transitionDelay = "0";
+            content3.style.transitionDelay = "0";
+            content4.style.transitionDelay = "0.4s";
+            content5.style.transitionDelay = "0";
+            content6.style.transitionDelay = "0";
+        }
+        function openDesserts(){
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(100%)";
+            content4.style.transform = "translateX(100%)";
+            content5.style.transform = "translateX(0)";
+            content6.style.transform = "translateX(100%)";
+            btn5.style.color = "#fff";
+            btn5.style.background = "#fb9202"
+            btn2.style.color = "#fb9202";
+            btn2.style.background = "#ffff"
+            btn3.style.color = "#fb9202";
+            btn3.style.background = "#ffff"
+            btn4.style.color = "#fb9202";
+            btn4.style.background = "#ffff"
+            btn1.style.color = "#fb9202";
+            btn1.style.background = "#ffff"
+            btn6.style.color = "#fb9202";
+            btn6.style.background = "#ffff"
+            content1.style.transitionDelay = "0";
+            content2.style.transitionDelay = "0";
+            content3.style.transitionDelay = "0";
+            content4.style.transitionDelay = "0";
+            content5.style.transitionDelay = "0.4s";
+            content6.style.transitionDelay = "0";
+        }
+        function openWine(){
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(100%)";
+            content4.style.transform = "translateX(100%)";
+            content5.style.transform = "translateX(100%)";
+            content6.style.transform = "translateX(0)";
+            btn6.style.color = "#fff";
+            btn6.style.background = "#fb9202"
+            btn1.style.color = "#fff";
+            btn2.style.background = "#ffff"
+            btn3.style.color = "#fb9202";
+            btn3.style.background = "#ffff"
+            btn4.style.color = "#fb9202";
+            btn4.style.background = "#ffff"
+            btn5.style.color = "#fb9202";
+            btn5.style.background = "#ffff"
+            btn1.style.color = "#fb9202";
+            btn1.style.background = "#ffff"
+            content1.style.transitionDelay = "0";
+            content2.style.transitionDelay = "0";
+            content3.style.transitionDelay = "0";
+            content4.style.transitionDelay = "0";
+            content5.style.transitionDelay = "0";
+            content6.style.transitionDelay = "0.4s";
+        }
+    </script>    
+    <script src="./jquery.counterup.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script> 
+        jQuery(document).ready(function( $ ){
+            $('.counter').counterUp({
+                delay: 10,
+                time: 5000
+            });
+        })
+    </script>
+    <script src="./food.js"></script>
+    <script src="../js/parallax.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 2000,
+            once: true
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.responsive').slick({
+            dots: true,
+            infinite: true,
+            speed: 700,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 700,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ],
+            arrows: false,
+        })             
+    </script>
+</body>
+</html>

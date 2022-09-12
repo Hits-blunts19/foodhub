@@ -1,0 +1,99 @@
+.prev{
+    position: absolute;
+    color: #2e2e2e;
+    bottom: 0;
+    top: 35%;
+    left: 100%;
+    font-size: 25px;
+    line-height: 50px;
+    display: inline-block;
+    height: 7vh;
+    width: 3vw;
+    cursor: pointer;
+}
+.prev:hover{
+    background-image: var(--secondary);
+    color: var(--light);
+    transition: var(--trans);
+}
+.next{
+    position: absolute;
+    color: #2e2e2e;
+    bottom: 0;
+    top: 60%;
+    left: 100%;
+    font-size: 25px;
+    line-height: 50px;
+    display: inline-block;
+    height: 7vh;
+    width: 3vw;
+    cursor: pointer;
+}
+.next:hover{
+    background-image: var(--secondary);
+    color: var(--light);
+    transition: var(--trans);
+}
+.responsive{
+    margin-top: 5%;
+}
+.carousel i{
+    position: absolute;
+    margin-left: 10%;
+    margin-top: -8%;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: .2rem;
+    background: #fb9202;
+    color: #fff;
+    border-radius: 50px;
+    height: 2rem;
+    width: 2rem;
+}
+.carousel{
+    text-align: center;
+}
+.carousel p{
+    line-height: 1.6rem;
+    font-size: 17px;
+    margin-top: 5%;
+}
+.carousel img{
+    margin-left: 30%;
+    height: 22vh; 
+    width: 11vw; 
+    border-radius: 100px;
+}
+.carousel h4{
+    font-weight: 500;
+    color: #000;
+}
+.carousel h6{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.slick-dots{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 16px 0;
+    list-style: none;
+}
+.slick-dots button{
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+    border: none;
+    border-radius: 50px;
+    background: #999;
+    color: transparent;
+}
+.slick-dots li.slick-active button{
+    background-color: #fb9202;
+}

@@ -1,0 +1,545 @@
+@media (max-width: 991px) {
+    body{
+        width: 100%;
+    }
+    .all{
+        height: 80vh;
+    }
+    header{
+        padding-top: .5rem;
+        width: 100%;
+    }
+    .navbar-cng{
+        width: 100%;
+    }
+    nav .nav-links ul li{
+        display: block;
+        height: 5vh;
+        width: 90%;
+        padding: .1rem .5rem;
+    }
+    nav .nav-links {
+        position: absolute;
+        background: var(--primary);
+        padding: .5rem;
+        height: 50vh;
+        width: 100%;
+        top: 100px;
+        left: -600px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s ease-in-out;
+    }
+    nav .nav-links ul{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    nav .nav-links ul li a{
+        color: #fff;
+        margin-bottom: 3%;
+    }
+    nav .nav-links ul li a i{
+        margin-left: .6rem;
+    }
+    nav .nav-links .fa-xmark{
+        display: block;
+        color: #fff;
+        cursor: pointer;
+        text-align: right;
+    }
+    nav .fa-bars {
+        display: block;
+        color: #fff;
+        cursor: pointer;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50px;
+        background: var(--primary);
+        text-align: center;
+        padding-top: .4rem;
+        margin-top: 2rem;
+    }
+    .blog{
+        position: relative;
+    }
+    .pages{
+        position: relative;
+    }
+    .dropdown{
+        background: var(--primary);
+        padding: 0;
+        position: absolute;
+        display: none;
+        opacity: 0;
+    }
+    .blog:hover .dropdown{
+        opacity: 1;
+        height: 13.5vh;
+        width: 70%;
+        z-index: 3;
+        padding: .5rem 1rem;
+    }
+    .pages:hover .dropdown{
+        opacity: 1;
+        height: 13.5vh;
+        width: 70%;
+        z-index: 3;
+        padding: .5rem 1rem;
+    }
+    .top{
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+    .top h2{
+        font-size: 35px;
+    }
+    .top p{
+        font-size: 16px;
+    }
+    .btn0{
+        display: none;
+    }
+    .section0{
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: center;
+    }
+    .card:nth-child(2){
+        display: none;
+    }
+    .card:nth-child(3){
+        display: none;
+    }
+    .card .content{
+        font-size: 10px;
+        margin-top: 5%;
+    }
+    .btn1{
+        width: 60%;
+    }
+    .section1{
+        margin-top: 42%;
+        padding: 2rem 1rem;
+        height: auto;
+    }
+    .sect1{
+        display: flex;
+        flex-direction: column;
+    }
+    .right0 img:nth-child(1){
+        display: none;
+    }
+    .right0 img:nth-child(3){
+        display: none;
+    }
+    .right0 img:nth-child(2){
+        display: none;
+    }
+    .left0{
+        padding: 1rem;
+    }
+    .left0 h1{
+        font-size: 40px;
+        font-family: 'Satisfy', sans-serif;
+        color: #000;
+        margin-bottom: 5%;
+    }
+    .btn2{
+        height: 3rem;
+        width: 3rem;
+        font-size: 1.3rem;
+    }
+    .section2{
+        padding: 2rem 1rem;
+    }
+    .sect2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .order{
+        width: 100%;
+    }
+    .order img{
+        height: 20vh;
+        width: 50%;
+        margin-left: 60px;
+    }
+    .btn3, .btn3n {
+        width: 120%;
+    }
+    .order:hover .dir{
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .parall{
+        padding: 2rem 1rem;
+        background: transparent;
+        height: auto;
+    }
+    .para{
+        z-index: 2;
+        position: relative;
+        color: #fff;
+    }
+    .para h5{
+        font-size: 15px;
+    }
+    .para h2{
+        font-size: 35px;
+        margin-top: 5%;
+    }
+    .btn4{
+        width: 50%;
+    }
+    .section3{
+        padding: 2rem 1rem;
+    }
+    .sect3 h2{
+        font-size: 35px;
+        margin-top: 5%;
+    }
+    .sect3 p{
+        font-size: 15px;
+    }
+    .box-items{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .box-items img{
+        height: 15vh; 
+        width: 6vw;
+    }
+    .section4{
+        padding: 2rem 0;
+    }
+    .blog-post{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .wan{
+        width: 89%;
+    }
+    footer{
+        padding: 3rem 2rem;
+    }
+    .foot{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .foot2, .foot3, .foot4 {
+        margin-top: 14%;
+    }
+    .foot2 th{
+        width: 70%;
+    }
+    .foot2 td {
+        width: 70%;
+    }
+    .ig{
+        display: flex;
+        gap: .3rem;
+        margin-bottom: .3rem;
+    }
+    .ig img{
+        height: 10vh; 
+        width: 25vw;
+    }
+    .foot4 input{
+        width: 100%;
+    }
+    .btn6{
+        width: 100%;
+    }
+
+    /* About page */
+    .section5{
+        padding: 1rem;
+    }
+    .sect5 h2{
+        margin-top: 45%;
+    }
+    .section6{
+        padding: 3rem 1rem;
+    }
+    .img{
+        display: none;
+    }
+    .section7{
+        padding: 3rem 1rem;
+    }
+    .sect7{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .count{
+        margin-bottom: 10%;
+    }
+    .section8{
+        padding: 3rem 1rem;
+    }
+    .top2 h1{
+        font-size: 45px;
+    }
+    .top2 p{
+        font-size: 15px;
+    }
+    .serve{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 15%;
+    }
+    .mini-serve{
+        margin-bottom: 10%;
+    }
+    .section9{
+        padding: 3rem 1rem;
+    }
+    .chefs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 15%;
+    }
+    .mini-chefs{
+        width: 100%;
+        margin-bottom: 15%;
+    }
+    .mini-chefs figure img{
+        width: 100%;
+    }
+    .top3 h1{
+        font-size: 45px;
+    }
+    .top3 p{
+        font-size: 15px;
+    }
+    .para2{
+        left: 0;
+        padding: 1rem;
+        width: 100%;
+        padding: .1rem;
+        height: auto;
+    }
+    .para2 div{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .para2 span input{
+        height: 8vh;
+    }
+    select{
+        height: 8vh;
+    }
+    .btn7{
+        width: 80%;
+        height: 8vh;
+    }
+    .sectionA{
+        padding: 3rem 1rem;
+    }
+
+    /* Recipe page */
+    .sectionB{
+        padding: 3rem 1rem;
+        height: 500vh;
+    }
+    .hero{
+        position: relative;
+        height: 600vh;
+        overflow: hidden;
+    }
+    .btn-box{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .btn-box button{
+        width: 100%;
+    }
+    .content{
+        margin-top: 2%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        position: absolute;
+        transform: translateX(100%);
+        transition: .3s ease-in-out;
+        width: 100%;
+    }
+    .cont{
+        width: 100%;
+    }
+    .btnX{
+        width: 40%;
+        height: 5vh;
+    }
+
+    /* Blog Page */
+    .sectionC{
+        padding: 3rem 1rem;
+    }
+    .sectC{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog-left{
+        width: 100%;
+    }
+    .blog-left img{
+        height: 30vh;
+        width: 100%;
+    }
+    .blg h3{
+        display: none;
+    }
+    .one{
+        margin-bottom: 15%;
+    }
+    .blog-right{
+        width: 100%;
+        padding: 1rem;
+    }
+    .end input{
+        width: 100%;
+    }
+    .end button{
+        width: 100%;
+    }
+    .buts{
+        margin-left: 1%;
+    }
+    .third1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .wan .fa-arrow-left{
+        height: 10vh;
+        width: 16%;
+    }
+    .twan .fa-arrow-right{
+        height: 10vh;
+        width: 28%;
+    }
+    .twan{
+        margin-left: 4%;
+        margin-top: 5%;
+    }
+    .ran{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .ranA{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 10%;
+    }
+    .ran1 img{
+        width: 16vw;
+        height: 8vh;
+    }
+    .btn8{
+        height: 6vh;
+        width: 30%;    
+    }
+    .third2{
+        height: 170vh;
+    }
+    .up input{
+        height: 7vh;
+        width: 50%;
+    }
+    .btn9{
+        height: 7vh;
+        width: 50%;
+    }
+    .two input{
+        width: 100%;
+    }
+    .two i{
+        right: 13%;
+        margin-top: 3%;
+    }
+
+    /* Pages page */
+    .sectionD{
+        padding: 3rem 1rem;
+    }
+    .sectD{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 10%;
+    }
+    .dleft{
+        width: 100%;
+        height: 40vh;
+    }
+    .dleft img{
+        width: 100%;
+    }
+    .dright{
+        width: 100%;
+        padding: 1rem;
+    }
+    .sectionE{
+        padding: 3rem 1rem;
+    }
+    .sectE{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 10%;
+    }
+    .view{
+        width: 100%;
+    }
+    .view img{
+        width: 100%;
+        margin-left: 5px;
+    }
+    .btnV{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Contact Page */
+    .sectionF{
+        padding: 3rem 1rem;
+    }
+    .area{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .beg{
+        width: 100%;
+    }
+    .beg1{
+        display: flex;
+        gap: 3rem;
+    }
+    .beg2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 5%;
+    }
+    .beg2 textarea{
+        width: 167%;
+        margin-top: -130px;
+    }
+    .beg2 input{
+        width: 167%;
+    }
+    .beg span{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .beg h5{
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 1.3rem;
+    }
+    .btnnn{
+        width: 100%;
+        margin-left: 30%;
+    }
+}

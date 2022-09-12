@@ -1,0 +1,92 @@
+.hero{
+    position: relative;
+    height: 165vh;
+    overflow: hidden;
+}
+.btn-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    border-bottom: 2px solid #fb9202;
+    padding-bottom: 1rem;
+}
+.btn-box button{
+    background: transparent;
+    border: 2px solid #fb9202;
+    color: #fb9202;
+    height: 9vh;
+    width: 28%;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.btn-box button:hover{
+    background: #fb9202;
+    border: 2px solid #fb9202;
+    color: #fff;
+}
+.btn-box i{
+    margin-left: 3%;
+}
+.content{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    position: absolute;
+    transform: translateX(100%);
+    transition: .3s ease-in-out;
+}
+.cont{
+    width: 20.8vw;
+    padding: .6rem .2rem;
+    height: auto;
+    margin-bottom: 10%;
+    margin-right: .5rem;
+}
+.ents{
+    margin-top: 10%;
+}
+.ents h4{
+    color: #000;
+    font-size: 21px;
+}
+.ents p{
+    font-size: 14px;
+    font-weight: 600;
+}
+.btnX{
+    height: 3vw;
+    width: 8vw;
+    margin-top: 3%;
+    background: var(--primary);
+    border: 1px solid #fb9202;
+    color: #fff;
+    border-radius: 1px;
+    font-size: 14px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.btnX:hover{
+    border: 1px solid #fb9202;
+    background: var(--back);
+    color: #fb9202;
+}
+.cont figure{
+    overflow: hidden;
+}
+.cont figure img{
+    display: block;
+    cursor: pointer;
+}
+.cont figure img{
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+} 
+.cont:hover  figure img{
+    transform: scale(1.5);
+}
+#content1{
+    transform: translateX(0px);
+}
