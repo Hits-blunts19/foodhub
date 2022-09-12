@@ -829,7 +829,17 @@
             content5.style.transitionDelay = "0";
             content6.style.transitionDelay = "0.4s";
         }
-    </script>    
+    </script>   
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.left = "0";
+        }
+        function hideMenu(){
+            navLinks.style.left = "-600px";
+        }
+    </script> 
     <script src="./jquery.counterup.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script> 
