@@ -297,6 +297,9 @@
     .mini-serve{
         margin-bottom: 10%;
     }
+    .mini-serve img{
+        height: 10vh;
+    }
     .section9{
         padding: 3rem 1rem;
     }
